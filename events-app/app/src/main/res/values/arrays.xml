@@ -1,0 +1,29 @@
+<resources>
+    <string-array name="location_entries">
+        <item>Nearby</item>
+        <item>2 km</item>
+        <item>5 km</item>
+        <item>This city</item>
+        <item>This country</item>
+    </string-array>
+
+    <string-array name="location_values">
+        <item>nearby</item>
+        <item>km2</item>
+        <item>km5</item>
+        <item>city</item>
+        <item>country</item>
+    </string-array>
+
+    <string-array name="pricing_entries">
+        <item>Only free events</item>
+        <item>Only paid events</item>
+        <item>Any event</item>
+    </string-array>
+
+    <string-array name="pricing_values">
+        <item>free</item>
+        <item>paid</item>
+        <item>all</item>
+    </string-array>
+</resources>
