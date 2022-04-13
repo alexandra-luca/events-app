@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.eventsapp" >
-
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,6 +11,7 @@
         android:theme="@style/Theme.EventsApp" >
         <activity
             android:name=".EventFilterActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false"
             android:label="@string/title_activity_event_filter" />
         <activity

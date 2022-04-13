@@ -5,9 +5,9 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class HomeViewModel : ViewModel() {
-
-    private val _text = MutableLiveData<String>().apply {
+    private var _text = MutableLiveData<String>().apply {
         value = "This is events Fragment"
     }
+
     val text: LiveData<String> = _text
 }
