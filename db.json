@@ -1,0 +1,19 @@
+{
+	"events": [
+		{"id": 1, "name": "Bucovina (Folk Rock)", "type": "concert", "pricing": "free"},
+		{"id": 2, "name": "Technoheads", "type": "party", "pricing": "free"},
+		{"id": 3, "name": "Mozart", "type": "opera", "pricing": "paid"},
+		{"id": 4, "name": "O scrisoare pierduta", "type": "play", "pricing": "paid"},
+		{"id": 5, "name": "Micutzu", "type": "standup", "pricing": "free"},
+		{"id": 6, "name": "A beautiful mind", "type": "movie", "pricing": "paid"},
+		{"id": 7, "name": "Slipknot", "type": "concert", "pricing": "free"},
+		{"id": 8, "name": "Sabaton", "type": "concert", "pricing": "free"},
+		{"id": 9, "name": "Herodot", "type": "party", "pricing": "paid"},
+		{"id": 10, "name": "CSGO @ACS", "type": "lanparty", "pricing": "paid"},
+		{"id": 11, "name": "WoW in retea", "type": "lanparty", "pricing": "free"},
+		{"id": 12, "name": "Irina Rimes", "type": "concert", "pricing": "paid"},
+		{"id": 13, "name": "Parasite", "type": "movie", "pricing": "free"},
+		{"id": 14, "name": "Haos in padure", "type": "party", "pricing": "free"},
+		{"id": 15, "name": "Florin Salam", "type": "opera", "pricing": "free"}
+	]
+}
