@@ -15,5 +15,9 @@
 		{"id": 13, "name": "Parasite", "type": "movie", "pricing": "free"},
 		{"id": 14, "name": "Haos in padure", "type": "party", "pricing": "free"},
 		{"id": 15, "name": "Florin Salam", "type": "opera", "pricing": "free"}
-	]
+	],
+	"favorites": [
+		2, 3, 4, 5
+	],
+	"tickets": [6, 7, 14]
 }
