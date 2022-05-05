@@ -17,15 +17,7 @@
 		{"id": 15, "name": "Florin Salam", "type": "opera", "pricing": "free"}
 	],
 	"favorites": [
-		{"id": 3, "name": "Mozart", "type": "opera", "pricing": "paid"},
-		{"id": 4, "name": "O scrisoare pierduta", "type": "play", "pricing": "paid"},
-		{"id": 5, "name": "Micutzu", "type": "standup", "pricing": "free"},
-		{"id": 6, "name": "A beautiful mind", "type": "movie", "pricing": "paid"}
+		2, 3, 4, 5
 	],
-	"tickets": [
-		{"id": 10, "name": "CSGO @ACS", "type": "lanparty", "pricing": "paid"},
-		{"id": 11, "name": "WoW in retea", "type": "lanparty", "pricing": "free"},
-		{"id": 12, "name": "Irina Rimes", "type": "concert", "pricing": "paid"},
-		{"id": 13, "name": "Parasite", "type": "movie", "pricing": "free"}
-	]
+	"tickets": [6, 7, 14]
 }
