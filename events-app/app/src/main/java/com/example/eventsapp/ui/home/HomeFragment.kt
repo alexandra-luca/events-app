@@ -1,20 +1,27 @@
 package com.example.eventsapp.ui.home
 
+import android.content.Context
+import android.content.Context.*
 import android.content.Intent
+import android.graphics.BitmapFactory
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.test.core.app.ApplicationProvider.getApplicationContext
 import com.beust.klaxon.Klaxon
 import com.example.eventsapp.EventFilterActivity
 import com.example.eventsapp.R
 import com.example.eventsapp.databinding.FragmentHomeBinding
 import okhttp3.*
 import java.io.IOException
+
 
 data class Event(val id: Int, val name: String, val type: String, val pricing: String);
 
