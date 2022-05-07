@@ -2,7 +2,7 @@
     <string name="app_name">EventsApp</string>
     <string name="title_home">Find events</string>
     <string name="title_dashboard">Favorites</string>
-    <string name="title_notifications">My tickets</string>
+    <string name="title_notifications">View on map</string>
     <string name="title_activity_event_filter">EventFilterActivity</string>
 
     <string name="preference_category_event_types">Event type</string>
