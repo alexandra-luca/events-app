@@ -14,6 +14,8 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.test.core.app.ApplicationProvider.getApplicationContext
 import com.beust.klaxon.Klaxon
 import com.example.eventsapp.EventFilterActivity
@@ -30,6 +32,8 @@ class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
 
     private var homeViewModel: HomeViewModel? = null
+
+    private lateinit var linearLayoutManager: LinearLayoutManager
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -50,6 +54,8 @@ class HomeFragment : Fragment() {
         homeViewModel!!.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+        linearLayoutManager = LinearLayoutManager(getContext())
+
         return root
     }
 
@@ -90,6 +96,11 @@ class HomeFragment : Fragment() {
                 val eventsTextView = view.findViewById<TextView>(R.id.eventsTextView)
                 eventsTextView.text = events.joinToString(", ") { event -> event.name }
 
+                val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerview)
+                recyclerView.layoutManager = linearLayoutManager
+
+                val adapter = CustomAdapter(events);
+                recyclerView.adapter = adapter;
             }
         })
     }
