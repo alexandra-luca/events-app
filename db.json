@@ -17,7 +17,9 @@
 		{"id": 15, "name": "Florin Salam", "type": "opera", "pricing": "free", "img": "https://i.ytimg.com/vi/6PbVDuf7FfQ/maxresdefault.jpg"}
 	],
 	"favorites": [
-		2, 3, 4, 5
+		{"id": 2, "name": "Solomun", "type": "party", "pricing": "free", "img": "https://imgproxy.ra.co/_/quality:100/plain/https://static.ra.co/images/profiles/lg/solomun.jpg?dateUpdated=1610297855000"},
+		{"id": 7, "name": "Slipknot", "type": "concert", "pricing": "free", "img": "https://upload.wikimedia.org/wikipedia/ro/b/b2/Slipknot_album.jpg"},
+		{"id": 9, "name": "Herodot", "type": "party", "pricing": "paid", "img": "https://avimag.net/wp-content/uploads/2018/08/ro-0511-1108785-front-500x500.jpg"}
 	],
 	"tickets": [6, 7, 14]
 }
