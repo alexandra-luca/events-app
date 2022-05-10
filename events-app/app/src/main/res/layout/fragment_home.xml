@@ -6,30 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/button_refresh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="124dp"
         android:layout_marginEnd="24dp"
         android:text="Refresh"
         android:textColor="#0D47A1"
-        app:layout_constraintBottom_toTopOf="@+id/text_home"
         app:layout_constraintEnd_toStartOf="@+id/button_filter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -39,27 +24,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="124dp"
         android:layout_marginEnd="24dp"
         android:text="Filter"
         android:textColor="#0D47A1"
-        app:layout_constraintBottom_toTopOf="@+id/text_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_refresh"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/eventsTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="469dp" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="335dp"
-        android:layout_height="346dp"
+        android:layout_height="221dp"
         android:layout_marginTop="108dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,6 +43,6 @@
         app:layout_constraintTop_toBottomOf="@+id/button_refresh"
         app:layout_constraintVertical_bias="0.0"
         tools:itemCount="5"
-        tools:listitem="@layout/text_row_item"/>
+        tools:listitem="@layout/text_row_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

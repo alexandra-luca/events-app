@@ -25,7 +25,7 @@ import okhttp3.*
 import java.io.IOException
 
 
-data class Event(val id: Int, val name: String, val type: String, val pricing: String);
+data class Event(val id: Int, val name: String, val type: String, val pricing: String, val img: String);
 
 class HomeFragment : Fragment() {
 
@@ -39,6 +39,8 @@ class HomeFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
+    private var ctx: Context? = null
+
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
@@ -50,11 +52,13 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel!!.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+//        val textView: TextView = binding.textHome
+//        homeViewModel!!.text.observe(viewLifecycleOwner) {
+//            textView.text = it
+//        }
         linearLayoutManager = LinearLayoutManager(getContext())
+
+        ctx = getContext();
 
         return root
     }
@@ -93,13 +97,13 @@ class HomeFragment : Fragment() {
         requireActivity()!!.runOnUiThread(object : Runnable {
             override fun run() {
 
-                val eventsTextView = view.findViewById<TextView>(R.id.eventsTextView)
-                eventsTextView.text = events.joinToString(", ") { event -> event.name }
+//                val eventsTextView = view.findViewById<TextView>(R.id.eventsTextView)
+//                eventsTextView.text = events.joinToString(", ") { event -> event.name }
 
                 val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerview)
                 recyclerView.layoutManager = linearLayoutManager
 
-                val adapter = CustomAdapter(events);
+                val adapter = CustomAdapter(events, ctx)
                 recyclerView.adapter = adapter;
             }
         })
